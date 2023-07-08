@@ -30,12 +30,11 @@ print(size)
 out = cv2.VideoWriter('project.mkv',cv2.VideoWriter_fourcc(*'DIVX'), 5, size)
 
 #For SUNSET
-for i in range(0,count-1):
+#for i in range(0,count-1):
 
 #For SUNRISE
-#for i in range(0,count):
-    frame = cv2.imread(images[i])
-    out.write(frame)
+for i in range(0,count):
+   
     
 out.release() # releasing the video generated
 print("Done")
